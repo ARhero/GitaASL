@@ -92,7 +92,7 @@ def generate_response():
     print(data)
     query = data.get('text')
     print(query)
-    qa_prompt = "suggest a solution based on Bhagavad Gita. Also mention the related shloka in sanskrit and english if any. Generate the response and give one line gap after each line if any, dont use * and double quote .----------------"
+    qa_prompt = "suggest a solution based on Bhagavad Gita. Also mention the related shloka in sanskrit and english if any. If the question is not related to life issues, then reply 'Sorry, I can only answer questions related to life, not related to (the category of question asked if not life)'. Generate the response and give one line gap after each line if any, dont use * and double quote .----------------"
     input_text = qa_prompt + "\nUser question:\n" + query
     
     # Invoke the Gemini API

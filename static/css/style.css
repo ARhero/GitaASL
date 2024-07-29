@@ -159,15 +159,29 @@ option {
   margin-bottom: 30px !important;
 }
 
-footer.mentions {
+/* footer.mentions {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
   position: absolute;
   top: 38rem;
   left: 78rem;
+} */
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
 }
 
+footer.mentions {
+  height: 40px; 
+  position: fixed; 
+  bottom:0%;
+  width:100%; 
+  opacity: 1;
+}
 
 footer.mentions a {
   color: white;
