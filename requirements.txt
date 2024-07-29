@@ -1,0 +1,10 @@
+Flask
+pandas
+Pillow
+opencv-python
+python-dotenv
+langchain-google-genai
+langchain
+faiss-cpu
+pypdf
+sentence-transformers
