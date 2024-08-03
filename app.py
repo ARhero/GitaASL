@@ -98,7 +98,6 @@ def generate_response():
     # Invoke the Gemini API
     result = llm.invoke(input_text)
     response_text = result.content
-    
     return jsonify({'response': response_text})
 
 if __name__ == '__main__':
